@@ -54,18 +54,18 @@ elForm.addEventListener('submit', function (evt) {
 
 elList.addEventListener('click', function (evt) {
 	let evtid = evt.target.id;
-	if (evt.target.matches('.todo-check')) {
-		let fins = todos.find((e)=> +e.todoId == +evtid)
-		let obj = {
-			id : fins.todoId,
-			title : fins.title,
-			completed : !fins.fins
-		}
-		fetch('https://todos1-0-0.herokuapp.com/todos', {
-		method: 'PUT',
-		body: obj,
-	})
-	.then((res) => console.log(res))
-	.catch((err) => console.log(err));
-}
+// 	if (evt.target.matches('.todo-check')) {
+// 		let fins = todos.find((e)=> +e.todoId == +evtid)
+// 		let obj = {
+// 			id : fins.todoId,
+// 			title : fins.title,
+// 			completed : !fins.fins
+// 		}
+// 		fetch('https://todos1-0-0.herokuapp.com/todos', {
+// 		method: 'PUT',
+// 		body: obj,
+// 	})
+// 	.then((res) => console.log(res))
+// 	.catch((err) => console.log(err));
+// }
 });

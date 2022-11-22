@@ -10,7 +10,7 @@ let temp = document.querySelector(".temp").content
 let todos = [];
 
 let url = async  ()=>{
-  let res = await  fetch('https://cors-anywhere.herokuapp.com/https://todos1-0-0.herokuapp.com/todos')
+  let res = await  fetch('https://todos1-0-0.herokuapp.com/todos')
   let data = await res.json()
   renderTodo(data, elList)
 }

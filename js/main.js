@@ -41,7 +41,7 @@ let renderTodo = (array, node) => {
 elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
   let elInputVal = elInput.value;
-  fetch('https://cors-anywhere.herokuapp.com/https://todos1-0-0.herokuapp.com/todos', {
+  fetch('https://cryptic-headland-94862.herokuapp.com/https://todos1-0-0.herokuapp.com/todos', {
   method : 'POST', 
   body: JSON.stringify({
     title: elInputVal

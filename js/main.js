@@ -57,6 +57,7 @@ elList.addEventListener('click', function(evt){
   if(evt.target.matches('.delete-btn')){
     fetch('https://todos1-0-0.herokuapp.com/todos' , {
     method: 'DELETE',
+    mode: 'no-cors', 
     body: {
       id: evtid
     }

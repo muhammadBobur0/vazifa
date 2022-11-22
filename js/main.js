@@ -61,7 +61,7 @@ elList.addEventListener('click', function (evt) {
 			title : fins.title,
 			completed : !fins.fins
 		}
-		fetch('http://todos1-0-0.herokuapp.com/todos', {
+		fetch('https://todos1-0-0.herokuapp.com/todos', {
 		method: 'PUT',
 		body: obj,
 	})

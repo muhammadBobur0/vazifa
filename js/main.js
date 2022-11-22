@@ -48,7 +48,7 @@ elForm.addEventListener("submit", function (evt) {
   }),
 }
 )
-.then((res)=>location.reload(true))
+.then((res)=>console.log(res.json()))
 });
 
 elList.addEventListener('click', function(evt){

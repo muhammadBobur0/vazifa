@@ -49,13 +49,13 @@ elForm.addEventListener("submit", function (evt) {
 }
 )
 .then((res)=>res.json())
-.then((data)=>console.log(data))
+.then((data)=>location.reload(true))
 });
 
 elList.addEventListener('click', function(evt){
   let evtid = evt.target.id
   if(evt.target.matches('.delete-btn')){
-    fetch('https://cors-anywhere.herokuapp.com/https://todos1-0-0.herokuapp.com/todos' , {
+    fetch('https://todos1-0-0.herokuapp.com/todos' , {
     method: 'DELETE',
     body: {
       id: evtid
